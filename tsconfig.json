@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		"target": "esnext",
+		"moduleResolution": "node",
+		"types": [
+			"./.env.d.ts"
+		]
+	},
+	"include": [
+		"src/**/*.ts"
+	]
+}
