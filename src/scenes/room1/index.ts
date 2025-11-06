@@ -207,7 +207,9 @@ export function room1({ origin }: Room1Props) {
       audio?.stop();
       go('room2');
     } else {
-      add(nextDoorText);
+      if (!nextDoorText.exists()) {
+        add(nextDoorText);
+      }
     }
   };
 
